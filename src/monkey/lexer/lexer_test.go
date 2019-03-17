@@ -7,7 +7,6 @@ import (
 
 func TestNextTokenBasicSourceCode(t *testing.T) {
 	runTest(t, New(input0), expected0)
-
 }
 
 func TestNextTokenRealisticSourceCode(t *testing.T) {
