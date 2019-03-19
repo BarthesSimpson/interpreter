@@ -13,6 +13,10 @@ func TestNextTokenRealisticSourceCode(t *testing.T) {
 	runTest(t, New(input1), expected1)
 }
 
+func TestNextTokenExhaustiveSourceCode(t *testing.T) {
+	runTest(t, New(input2), expected2)
+}
+
 func runTest(t *testing.T, lexer *Lexer, tests []TokenExpectation) {
 	for i, tt := range tests {
 		tok := lexer.NextToken()
