@@ -3,9 +3,9 @@ package repl
 import (
 	"bufio"
 	"fmt"
-	"go/token"
 	"io"
 	"monkey/lexer"
+	"monkey/token"
 )
 
 // PROMPT is the left buffer printed in the REPL
