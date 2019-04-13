@@ -7,7 +7,7 @@ import (
 // TokenExpectation is a simple data structure
 // for checking test output
 type TokenExpectation struct {
-	expectedType    token.TokenType
+	expectedType    token.Type
 	expectedLiteral string
 }
 

@@ -15,8 +15,8 @@ type Lexer struct {
 	ch           byte // current char under examination
 }
 
-// New is a factory for creating new Lexer instance per input
-func New(input string) *Lexer {
+// GetLexer is a factory for creating new Lexer instance per input
+func GetLexer(input string) *Lexer {
 	l := &Lexer{input: input}
 	l.readChar()
 	return l
@@ -144,6 +144,6 @@ func isDigit(ch byte) bool {
 	return '0' <= ch && ch <= '9'
 }
 
-func newToken(tokenType token.TokenType, ch byte) token.Token {
+func newToken(tokenType token.Type, ch byte) token.Token {
 	return token.Token{Type: tokenType, Literal: string(ch)}
 }

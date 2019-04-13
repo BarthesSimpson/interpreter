@@ -2,7 +2,7 @@ package token
 
 // TokenType is an enum of strings.
 // Should consider changing this to an int or byte for better performance
-type TokenType string
+type Type string
 
 type SourceLocation struct {
 	filePath string
@@ -12,7 +12,7 @@ type SourceLocation struct {
 
 type Token struct {
 	SourceLocation
-	Type    TokenType
+	Type    Type
 	Literal string
 }
 
@@ -57,7 +57,7 @@ const (
 	RETURN   = "RETURN"
 )
 
-var keywords = map[string]TokenType{
+var keywords = map[string]Type{
 	"fn":     FUNCTION,
 	"let":    LET,
 	"true":   TRUE,
@@ -67,7 +67,7 @@ var keywords = map[string]TokenType{
 	"return": RETURN,
 }
 
-func LookupIdent(ident string) TokenType {
+func LookupIdent(ident string) Type {
 	if tok, ok := keywords[ident]; ok {
 		return tok
 	}

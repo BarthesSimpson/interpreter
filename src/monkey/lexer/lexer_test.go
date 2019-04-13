@@ -6,15 +6,15 @@ import (
 )
 
 func TestNextTokenBasicSourceCode(t *testing.T) {
-	runTest(t, New(input0), expected0)
+	runTest(t, GetLexer(input0), expected0)
 }
 
 func TestNextTokenRealisticSourceCode(t *testing.T) {
-	runTest(t, New(input1), expected1)
+	runTest(t, GetLexer(input1), expected1)
 }
 
 func TestNextTokenExhaustiveSourceCode(t *testing.T) {
-	runTest(t, New(input2), expected2)
+	runTest(t, GetLexer(input2), expected2)
 }
 
 func runTest(t *testing.T, lexer *Lexer, tests []TokenExpectation) {
