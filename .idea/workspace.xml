@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="fafcff01-4c2a-4e77-9de8-668cf59df839" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/monkey/lexer/lexer_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/monkey/lexer/lexer_test.go" afterDir="false" />
-    </list>
+    <list default="true" id="fafcff01-4c2a-4e77-9de8-668cf59df839" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -12,13 +10,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/monkey/main.go">
-          <provider selected="true" editor-type-id="text-editor" />
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/interpreter/main.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="318">
+              <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
+              <folding>
+                <element signature="e#14#63#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/monkey/TODO.md">
+        <entry file="file://$PROJECT_DIR$/src/interpreter/TODO.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
               <first_editor />
@@ -28,7 +33,7 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/monkey/lexer/lexer_test.go">
+        <entry file="file://$PROJECT_DIR$/src/interpreter/lexer/lexer_test.go">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="95">
               <caret line="8" column="15" selection-start-line="8" selection-start-column="15" selection-end-line="8" selection-end-column="15" />
@@ -37,7 +42,7 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/monkey/repl/repl.go">
+        <entry file="file://$PROJECT_DIR$/src/interpreter/repl/repl.go">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="462">
               <caret line="27" column="40" selection-start-line="27" selection-start-column="40" selection-end-line="27" selection-end-column="40" />
@@ -49,7 +54,7 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/monkey/lexer/lexer.go">
+        <entry file="file://$PROJECT_DIR$/src/interpreter/lexer/lexer.go">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="426">
               <caret line="40" column="36" lean-forward="true" selection-start-line="40" selection-start-column="34" selection-end-line="40" selection-end-column="39" />
@@ -58,7 +63,7 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/monkey/token/token.go">
+        <entry file="file://$PROJECT_DIR$/src/interpreter/token/token.go">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="242">
               <caret line="71" column="18" lean-forward="true" selection-start-line="71" selection-start-column="18" selection-end-line="71" selection-end-column="18" />
@@ -75,11 +80,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/monkey/lexer/lexer_test_inputs.go">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/interpreter/lexer/lexer_test_inputs.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="133">
-              <caret line="9" column="26" selection-start-line="9" selection-start-column="26" selection-end-line="9" selection-end-column="26" />
+            <state relative-caret-position="342">
+              <caret line="20" column="2" lean-forward="true" selection-start-line="20" selection-start-column="2" selection-end-line="20" selection-end-column="2" />
             </state>
           </provider>
         </entry>
@@ -101,9 +106,10 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/.gitignore" />
-        <option value="$PROJECT_DIR$/src/monkey/repl/repl.go" />
-        <option value="$PROJECT_DIR$/src/monkey/token/token.go" />
-        <option value="$PROJECT_DIR$/src/monkey/lexer/lexer_test_inputs.go" />
+        <option value="$PROJECT_DIR$/src/interpreter/repl/repl.go" />
+        <option value="$PROJECT_DIR$/src/interpreter/token/token.go" />
+        <option value="$PROJECT_DIR$/src/interpreter/lexer/lexer_test_inputs.go" />
+        <option value="$PROJECT_DIR$/src/interpreter/main.go" />
       </list>
     </option>
   </component>
@@ -137,20 +143,6 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="monkey" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="interpreter" type="b2602c69:ProjectViewProjectNode" />
-              <item name="interpreter" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="monkey" type="462c0819:PsiDirectoryNode" />
-              <item name="lexer" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="interpreter" type="b2602c69:ProjectViewProjectNode" />
-              <item name="interpreter" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="monkey" type="462c0819:PsiDirectoryNode" />
-              <item name="repl" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -183,14 +175,14 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Go Test.go test monkey/lexer">
+  <component name="RunManager" selected="Go Test.go test interpreter/lexer">
     <configuration name="TestNextTokenBasicSourceCode in lexer_test.go" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
       <module name="interpreter" />
-      <working_directory value="$PROJECT_DIR$/src/monkey/lexer" />
+      <working_directory value="$PROJECT_DIR$/src/interpreter/lexer" />
       <framework value="gotest" />
       <kind value="FILE" />
       <directory value="$PROJECT_DIR$/" />
-      <filePath value="$PROJECT_DIR$/src/monkey/lexer/lexer_test.go" />
+      <filePath value="$PROJECT_DIR$/src/interpreter/lexer/lexer_test.go" />
       <pattern value="^TestNextTokenBasicSourceCode$" />
       <method v="2" />
     </configuration>
@@ -207,12 +199,12 @@
       <filePath value="$PROJECT_DIR$/" />
       <method v="2" />
     </configuration>
-    <configuration name="go test monkey/lexer" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+    <configuration name="go test interpreter/lexer" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
       <module name="interpreter" />
-      <working_directory value="$PROJECT_DIR$/src/monkey/lexer" />
+      <working_directory value="$PROJECT_DIR$/src/interpreter/lexer" />
       <framework value="gotest" />
       <kind value="PACKAGE" />
-      <package value="monkey/lexer" />
+      <package value="interpreter/lexer" />
       <directory value="$PROJECT_DIR$/" />
       <filePath value="$PROJECT_DIR$/" />
       <method v="2" />
@@ -233,7 +225,7 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Go Test.go test monkey/lexer" />
+        <item itemvalue="Go Test.go test interpreter/lexer" />
         <item itemvalue="Go Test.TestNextTokenBasicSourceCode in lexer_test.go" />
         <item itemvalue="Docker.go-langserver/Dockerfile" />
       </list>
@@ -257,7 +249,7 @@
       <configuration name="TestNextTokenBasicSourceCode in lexer_test.go" configurationId="GoTestRunConfiguration" />
     </history-entry>
     <history-entry file="go_test_monkey_lexer - 2019.04.13 at 14h 31m 44s.xml">
-      <configuration name="go test monkey/lexer" configurationId="GoTestRunConfiguration" />
+      <configuration name="go test interpreter/lexer" configurationId="GoTestRunConfiguration" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
@@ -301,10 +293,7 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/monkey/main.go">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/monkey/TODO.md">
+    <entry file="file://$PROJECT_DIR$/src/interpreter/TODO.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
           <first_editor />
@@ -320,21 +309,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/monkey/lexer/lexer_test.go">
+    <entry file="file://$PROJECT_DIR$/src/interpreter/lexer/lexer_test.go">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="95">
           <caret line="8" column="15" selection-start-line="8" selection-start-column="15" selection-end-line="8" selection-end-column="15" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/monkey/lexer/lexer.go">
+    <entry file="file://$PROJECT_DIR$/src/interpreter/lexer/lexer.go">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="426">
           <caret line="40" column="36" lean-forward="true" selection-start-line="40" selection-start-column="34" selection-end-line="40" selection-end-column="39" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/monkey/repl/repl.go">
+    <entry file="file://$PROJECT_DIR$/src/interpreter/repl/repl.go">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="462">
           <caret line="27" column="40" selection-start-line="27" selection-start-column="40" selection-end-line="27" selection-end-column="40" />
@@ -344,17 +333,27 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/monkey/token/token.go">
+    <entry file="file://$PROJECT_DIR$/src/interpreter/token/token.go">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="242">
           <caret line="71" column="18" lean-forward="true" selection-start-line="71" selection-start-column="18" selection-end-line="71" selection-end-column="18" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/monkey/lexer/lexer_test_inputs.go">
+    <entry file="file://$PROJECT_DIR$/src/interpreter/lexer/lexer_test_inputs.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="9" column="26" selection-start-line="9" selection-start-column="26" selection-end-line="9" selection-end-column="26" />
+        <state relative-caret-position="342">
+          <caret line="20" column="2" lean-forward="true" selection-start-line="20" selection-start-column="2" selection-end-line="20" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/interpreter/main.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="318">
+          <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
+          <folding>
+            <element signature="e#14#63#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
