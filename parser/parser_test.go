@@ -23,6 +23,7 @@ func TestLetStatements(t *testing.T) {
 	if len(program.Statements) != 3 {
 		t.Fatalf("program.Statements contains %d statements instead of 3", len(program.Statements))
 	}
+	checkParserErrors(t, p)
 
 	tests := []struct {
 		expectedIdentifier string
@@ -62,4 +63,37 @@ func testLetStatement(t *testing.T, s ast.Statement, name string) bool {
 	}
 
 	return true
+}
+
+func testErrors(t *testing.T) bool {
+	input := `
+	let x 5;
+	let = 10;
+	let 838383;
+	`
+
+	l := lexer.GetLexer(input)
+	p := GetParser(l)
+
+	expectedErrors := 3
+	actualErrors := len(p.Errors())
+	p.ParseProgram()
+	if actualErrors != expectedErrors {
+		t.Errorf("Expected %d errors but got %d", expectedErrors, actualErrors)
+		return false
+	}
+	return true
+}
+
+func checkParserErrors(t *testing.T, p *Parser) {
+	errors := p.Errors()
+	if len(errors) == 0 {
+		return
+	}
+
+	t.Errorf("parser has %d errors", len(errors))
+	for _, msg := range errors {
+		t.Errorf("parser error: %q", msg)
+	}
+	t.FailNow()
 }
