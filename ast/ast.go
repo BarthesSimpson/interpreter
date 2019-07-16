@@ -27,6 +27,11 @@ func (p *Program) TokenLiteral() string {
 	return ""
 }
 
+/**
+ * Let statements
+ */
+
+// LetStatement is a statement that assigns a variable;
 type LetStatement struct {
 	Token token.Token
 	Name  *Identifier
@@ -44,3 +49,16 @@ type Identifier struct {
 
 func (i *Identifier) expressionNode()      {}
 func (i *Identifier) TokenLiteral() string { return i.Token.Literal }
+
+/**
+ * Return statements
+ */
+
+// ReturnStatement is a statement that returns an expression
+type ReturnStatement struct {
+	Token       token.Token
+	ReturnValue Expression
+}
+
+func (rs *ReturnStatement) statementNode()       {}
+func (rs *ReturnStatement) TokenLiteral() string { return rs.Token.Literal }
